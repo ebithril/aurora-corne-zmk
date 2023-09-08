@@ -22,7 +22,7 @@
    &none &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y &kp SQT &none
    &none &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G   &kp M &mt RSHIFT N &mt RCTRL E &mt LALT I &mt RGUI O &none
    &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp UNDER &none
-                  &lt 1 ESC &lt 2 BSPC &lt 3 SPACE  &lt 4 &lt RET 5 TAB  &lt 6 DEL
+                  &lt 1 ESC &lt 2 BSPC &lt 3 SPACE  &lt 4 RET &lt 5 TAB  &lt 6 DEL
                         >;
                 };
                 lower_layer {
