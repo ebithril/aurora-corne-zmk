@@ -9,6 +9,34 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        behaviors {
+                lmt: left_mod_tap {
+                     compatible = "zmk,behavior-hold-tap";
+                     label = "LEFT_MOD_TAP";
+                     #binding-cells = <2>;
+                     flavor = "tap-unless-interrupted";
+                     tapping-term-ms = <100>;
+                     quick-tap-ms = <200>;
+                     bindings = <&kp>, <&kp>;
+                     hold-trigger-key-positions = <
+                        6 7 8 9 10 11
+                        18 19 20 21 22 23
+                        30 31 32 33 34 35>;
+                };
+                rmt: right_mod_tap {
+                     compatible = "zmk,behavior-hold-tap";
+                     label = "RIGHT_MOD_TAP";
+                     #binding-cells = <2>;
+                     flavor = "tap-unless-interrupted";
+                     tapping-term-ms = <100>;
+                     quick-tap-ms = <200>;
+                     bindings = <&kp>, <&kp>;
+                     hold-trigger-key-positions = <
+                        0 1 2 3 4 5
+                        12 13 14 15 16 17
+                        24 25 26 27 28 29>;
+                };
+        };
         combos {
                 compatible = "zmk,combos";
                 combo_caps_word {
@@ -28,7 +56,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &none &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y &kp SQT &none
-   &none &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G   &kp M &mt RSHIFT N &mt RCTRL E &mt LALT I &mt RGUI O &none
+   &none &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G   &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O &none
    &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp UNDER &none
                   &lt 1 ESC &lt 2 BSPC &lt 3 SPACE  &lt 4 RET &lt 5 TAB  &lt 6 DEL
                         >;
