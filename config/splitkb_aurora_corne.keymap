@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "keys_se.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -52,7 +53,7 @@
 
                 default_layer {
                         bindings = <
-   &none &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &kp SQT     &none
+   &none &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &kp PIPE &none
    &none &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G    &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O &none
    &none &kp Z       &kp X       &kp C        &kp D         &kp V    &kp K &kp H         &kp COMMA    &kp DOT     &kp UNDER   &none
                                  &lt 1 ESC &lt 2 SPACE &lt 3 BSPC    &lt 4 TAB &lt 5 RET  &lt 6 DEL
@@ -84,18 +85,18 @@
                 };
                 sym_layer {
                         bindings = <
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-                     &none &none &none  &none &none &none
+   &none &kp SE_LBRC  &kp SE_AMPS &kp SE_STAR &kp SE_LPAR  &kp SE_RBRC  &none &none &none &none &none &none
+   &none &kp SE_COLON &kp SE_DLLR &kp PRCNT   &kp SE_CARET &kp SE_PLUS  &none &none &none &none &none &none
+   &none &kp SE_TILDE &kp EXCL    &kp SE_AT   &kp SE_HASH  &kp SE_PIPE  &none &none &none &none &none &none
+                                  &kp SE_LPAR &kp SE_RPAR &kp SE_UNDER  &none &none &none
                         >;
                 };
                 num_layer {
                         bindings = <
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-                     &none &none &none  &none &none &none
+   &none &kp SE_LBKT &kp N7 &kp N8 &kp N9 &kp SE_RBKT  &none &none &none &none &none &none
+   &none &kp SE_SEMI &kp N4 &kp N5 &kp N6 &kp SE_EQUAL  &none &none &none &none &none &none
+   &none &kp SE_GRAVE &kp N1 &kp N2 &kp N3 &kp SE_BSLH  &none &none &none &none &none &none
+                     &kp DOT &kp N0 &kp SE_MINUS  &none &none &none
                         >;
                 };
                 fun_layer {
