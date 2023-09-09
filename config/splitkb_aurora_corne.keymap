@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "keys_se.h"
+#include "keys_sv.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -43,28 +43,28 @@
                      compatible = "zmk,behavior-mod-morph";
                      label = "COMMA_LESS_THAN";
                      #binding-cells = <0>;
-                     bindings = <&kp COMMA>, <&kp SE_LT>;
+                     bindings = <&kp COMMA>, <&kp SV_LT>;
                      mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 dotgt: dot_greater_than {
                      compatible = "zmk,behavior-mod-morph";
                      label = "DOT_GREATER_THAN";
                      #binding-cells = <0>;
-                     bindings = <&kp DOT>, <&kp SE_GT>;
+                     bindings = <&kp DOT>, <&kp SV_GT>;
                      mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 slqst: slash_question {
                      compatible = "zmk,behavior-mod-morph";
                      label = "SLASH_QUESTION";
                      #binding-cells = <0>;
-                     bindings = <&kp SE_FSLH>, <&kp SE_QMARK>;
+                     bindings = <&kp SV_FSLH>, <&kp SV_QMARK>;
                      mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 sqtdqt: single_quote_double_quote {
                      compatible = "zmk,behavior-mod-morph";
                      label = "SINGLE_QUOTE_DOUBLE_QUOTE";
                      #binding-cells = <0>;
-                     bindings = <&kp SE_SQT>, <&kp SE_DQT>;
+                     bindings = <&kp SV_SQT>, <&kp SV_DQT>;
                      mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
         };
@@ -113,18 +113,18 @@
                 };
                 sym_layer {
                         bindings = <
-   &none &kp SE_LBRC  &kp SE_AMPS &kp SE_STAR &kp SE_LPAR  &kp SE_RBRC  &none &none &none &none &none &none
-   &none &kp SE_COLON &kp SE_DLLR &kp PRCNT   &kp SE_CARET &kp SE_PLUS  &none &none &none &none &none &none
-   &none &kp SE_TILDE &kp EXCL    &kp SE_AT   &kp SE_HASH  &kp SE_PIPE  &none &none &none &none &none &none
-                                  &kp SE_LPAR &kp SE_RPAR &kp SE_UNDER  &none &none &none
+   &none &kp SV_LBRC  &kp SV_AMPS &kp SV_STAR &kp SV_LPAR  &kp SV_RBRC  &none &none &none &none &none &none
+   &none &kp SV_COLON &kp SV_DLLR &kp PRCNT   &kp SV_CARET &kp SV_PLUS  &none &none &none &none &none &none
+   &none &kp SV_TILDE &kp EXCL    &kp SV_AT   &kp SV_HASH  &kp SV_PIPE  &none &none &none &none &none &none
+                                  &kp SV_LPAR &kp SV_RPAR &kp SV_UNDER  &none &none &none
                         >;
                 };
                 num_layer {
                         bindings = <
-   &none &kp SE_LBKT &kp N7 &kp N8 &kp N9 &kp SE_RBKT  &none &none &none &none &none &none
-   &none &kp SE_SEMI &kp N4 &kp N5 &kp N6 &kp SE_EQUAL  &none &none &none &none &none &none
-   &none &kp SE_GRAVE &kp N1 &kp N2 &kp N3 &kp SE_BSLH  &none &none &none &none &none &none
-                     &kp DOT &kp N0 &kp SE_MINUS  &none &none &none
+   &none &kp SV_LBKT &kp N7 &kp N8 &kp N9 &kp SV_RBKT  &none &none &none &none &none &none
+   &none &kp SV_SEMI &kp N4 &kp N5 &kp N6 &kp SV_EQUAL  &none &none &none &none &none &none
+   &none &kp SV_GRAVE &kp N1 &kp N2 &kp N3 &kp SV_BSLH  &none &none &none &none &none &none
+                     &kp DOT &kp N0 &kp SV_MINUS  &none &none &none
                         >;
                 };
                 fun_layer {
