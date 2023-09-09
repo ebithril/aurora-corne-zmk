@@ -55,15 +55,15 @@
    &none &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &kp SQT     &none
    &none &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G    &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O &none
    &none &kp Z       &kp X       &kp C        &kp D         &kp V    &kp K &kp H         &kp COMMA    &kp DOT     &kp UNDER   &none
-                                 &lt 1 ESC &lt 2 SPACE &lt 3 BSPC     &lt 4 TAB &lt 5 RET  &lt 6 DEL
+                                 &lt 1 ESC &lt 2 SPACE &lt 3 BSPC    &lt 4 TAB &lt 5 RET  &lt 6 DEL
                         >;
                 };
                 media_layer {
                         bindings = <
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-                     &none &none &none  &none &none &none
+   &none &none    &none    &none     &none      &none  &none &none      &none             &none           &none      &none
+   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &kp C_PREV &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp C_NEXT &none
+   &none &none    &kp RALT &none     &none      &none  &none &kp LBKT   &kp SQT           &kp SEMI        &none      &none
+                                    &none &none &none  &kp C_STOP &kp C_PLAY &kp C_MUTE
                         >;
                 };
                 nav_layer {
