@@ -84,7 +84,7 @@
    &none &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &sqtdqt     &none
    &none &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G    &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O &none
    &none &kp Z       &kp X       &kp C        &kp D         &kp V    &kp K &kp H         &cmlt        &dotgt      &slqst      &none
-                                 &lt 1 ESC &lt 2 SPACE &lt 3 BSPC    &lt 4 TAB &lt 5 RET  &lt 6 DEL
+                                 &lt 1 ESC &lt 2 BSPC &lt 3 SPACE    &lt 4 RET &lt 5 TAB  &lt 6 DEL
                         >;
                 };
                 media_layer {
