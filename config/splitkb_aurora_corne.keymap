@@ -66,6 +66,11 @@
                      key-positions = <16 19>;
                      bindings = <&caps_word>;
                 };
+                combo_game_layer {
+                     timeout-ms = <50>;
+                     key-positions = <25 34>;
+                     bindings = <&tog 7>;
+                };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -124,6 +129,14 @@
    &none &kp F11 &kp F4 &kp F5 &kp F6 &none  &none &none &none &none &none &none
    &none &kp F10 &kp F1 &kp F2 &kp F3 &none  &none &none &none &none &none &none
                      &none &none &none  &none &none &none
+                        >;
+                };
+                game_layer {
+                        bindings = <
+   &none &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U &kp Y  &sqtdqt &none
+   &none &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E &kp I  &kp O   &none
+   &none &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &cmlt &dotgt &slqst  &none
+      &lt 1 ESC &lt 2 BSPC &lt 3 SPACE    &lt 4 RET &lt 5 TAB  &lt 6 DEL
                         >;
                 };
         };
