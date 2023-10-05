@@ -13,7 +13,7 @@
 
 &caps_word {
         continue-list = <UNDERSCORE>;
-}
+};
 
 / {
         behaviors {
