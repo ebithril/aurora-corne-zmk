@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &caps_word {
-        continue-list = <SV_UNDER>;
+        continue-list = <SV_UNDER BSPC>;
 };
 
 / {
