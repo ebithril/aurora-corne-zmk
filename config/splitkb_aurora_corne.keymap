@@ -82,12 +82,12 @@
                 compatible = "zmk,combos";
                 combo_caps_word {
                      timeout-ms = <50>;
-                     key-positions = <16 19>;
+                     key-positions = <25 26>;
                      bindings = <&caps_word>;
                 };
                 combo_game_layer {
                      timeout-ms = <50>;
-                     key-positions = <25 34>;
+                     key-positions = <33 34>;
                      bindings = <&tog 7>;
                 };
         };
