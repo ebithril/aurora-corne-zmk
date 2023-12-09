@@ -3,11 +3,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: mouse
-      url-base: https://github.com/petejohanson
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: mouse
-      revision: feat/pointers-move-scroll
+      revision: mouse-3.2
       import: app/west.yml
   self:
     path: config
