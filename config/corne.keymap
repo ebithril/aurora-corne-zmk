@@ -26,10 +26,10 @@
                      global-quick-tap;
                      bindings = <&kp>, <&kp>;
                      hold-trigger-key-positions = <
-                        6 7 8 9 10 11
-                        18 19 20 21 22 23
-                        30 31 32 33 34 35
-                        39 40 41>;
+                        5 6 7 8 9
+                        15 16 17 18 19
+                        25 26 27 28 29
+                        33 34 35>;
                      hold-trigger-on-release;
                 };
                 rmt: right_mod_tap {
@@ -41,10 +41,10 @@
                      global-quick-tap;
                      bindings = <&kp>, <&kp>;
                      hold-trigger-key-positions = <
-                        0 1 2 3 4 5
-                        12 13 14 15 16 17
-                        24 25 26 27 28 29
-                        36 37 38>;
+                        0 1 2 3 4
+                        10 11 12 13 14
+                        20 21 22 23 24
+                        30 31 32>;
                      hold-trigger-on-release;
                 };
                 cmlt: comma_less_than {
@@ -76,12 +76,12 @@
                 compatible = "zmk,combos";
                 combo_caps_word {
                      timeout-ms = <50>;
-                     key-positions = <25 26>;
+                     key-positions = <20 21>;
                      bindings = <&caps_word>;
                 };
                 combo_game_layer {
                      timeout-ms = <50>;
-                     key-positions = <33 34>;
+                     key-positions = <28 29>;
                      bindings = <&tog 7>;
                 };
         };
@@ -91,72 +91,72 @@
                 default_layer {
                         display-name = "Default";
                         bindings = <
-   &none &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &sqtdqt     &none
-   &none &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G    &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O &none
-   &none &kp Z       &kp X       &kp C        &kp D         &kp V    &kp K &kp H         &cmlt        &dotgt      &slqst      &none
+   &kp Q       &kp W       &kp F        &kp P         &kp B    &kp J &kp L         &kp U        &kp Y       &sqtdqt
+   &lmt LGUI A &lmt LALT R &lmt LCTRL S &lmt LSHIFT T &kp G    &kp M &rmt RSHIFT N &rmt RCTRL E &rmt LALT I &rmt RGUI O
+   &kp Z       &kp X       &kp C        &kp D         &kp V    &kp K &kp H         &cmlt        &dotgt      &slqst
                                  &lt 1 ESC &lt 2 BSPC &lt 3 SPACE    &lt 4 RET &lt 5 TAB  &lt 6 DEL
                         >;
                 };
                 media_layer {
                         display-name = "Media";
                         bindings = <
-   &none &none    &none    &none     &none      &none  &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3 &none
-   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none        &kp C_PREV   &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp C_NEXT   &none
-   &none &none    &kp RALT &none     &none      &none  &none        &kp LBKT     &kp SQT           &kp SEMI        &none        &none
+   &none    &none    &none     &none      &none  &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3
+   &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none        &kp C_PREV   &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp C_NEXT
+   &none    &kp RALT &none     &none      &none  &none        &kp LBKT     &kp SQT           &kp SEMI        &none
                                     &none &none &none  &kp C_STOP &kp C_PLAY &kp C_MUTE
                         >;
                 };
                 nav_layer {
                         display-name = "Navigation";
                         bindings = <
-   &none &none &none &none &none &none  &none &none &none &none &none &none
-   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
-   &none &none &none &none &none &none  &none &none &none &none &none &none
+   &none &none &none &none &none  &none &none &none &none &none
+   &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW
+   &none &none &none &none &none  &none &none &none &none &none
                      &none &none &none  &none &none &none
                         >;
                 };
                 mouse_layer {
                         display-name = "Mouse";
                         bindings = <
-   &none &none    &none    &none     &none      &none  &none &none            &none            &none          &none             &none
-   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &none
-   &none &none &none &none &none &none                 &none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none
+   &none    &none    &none     &none      &none  &none &none            &none            &none          &none
+   &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT
+   &none &none &none &none &none                 &none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
                      &none &none &none                 &mkp MB1 &mkp MB2 &mkp MB3
                         >;
                 };
                 sym_layer {
                         display-name = "Symbol";
                         bindings = <
-   &none &kp SV_LBRC  &kp SV_AMPS &kp SV_STAR &kp SV_LPAR  &kp SV_RBRC  &none &none &none &none &none &none
-   &none &kp SV_COLON &kp SV_DLLR &kp PRCNT   &kp SV_CARET &kp SV_PLUS  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI &none
-   &none &kp SV_TILDE &kp EXCL    &kp SV_AT   &kp SV_HASH  &kp SV_PIPE  &none &none &none &none &none &none
+   &kp SV_LBRC  &kp SV_AMPS &kp SV_STAR &kp SV_LPAR  &kp SV_RBRC  &none &none &none &none &none
+   &kp SV_COLON &kp SV_DLLR &kp PRCNT   &kp SV_CARET &kp SV_PLUS  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI
+   &kp SV_TILDE &kp EXCL    &kp SV_AT   &kp SV_HASH  &kp SV_PIPE  &none &none &none &none &none
                                   &kp SV_LPAR &kp SV_RPAR &kp SV_UNDER  &none &none &none
                         >;
                 };
                 num_layer {
                         display-name = "Number";
                         bindings = <
-   &none &kp SV_LBKT  &kp N7 &kp N8 &kp N9 &kp SV_RBKT   &none &none &none &none &none &none
-   &none &kp SV_SEMI  &kp N4 &kp N5 &kp N6 &kp SV_EQUAL  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI &none
-   &none &kp SV_GRAVE &kp N1 &kp N2 &kp N3 &kp SV_BSLH   &none &none &none &none &none &none
+   &kp SV_LBKT  &kp N7 &kp N8 &kp N9 &kp SV_RBKT   &none &none &none &none &none
+   &kp SV_SEMI  &kp N4 &kp N5 &kp N6 &kp SV_EQUAL  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI
+   &kp SV_GRAVE &kp N1 &kp N2 &kp N3 &kp SV_BSLH   &none &none &none &none &none
                             &kp DOT &kp N0 &kp SV_MINUS  &none &none &none
                         >;
                 };
                 fun_layer {
                         display-name = "Function";
                         bindings = <
-   &none &kp F12 &kp F7 &kp F8 &kp F9 &none  &none &none &none &none &none &none
-   &none &kp F11 &kp F4 &kp F5 &kp F6 &none  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI &none
-   &none &kp F10 &kp F1 &kp F2 &kp F3 &none  &none &none &none &none &none &none
+   &kp F12 &kp F7 &kp F8 &kp F9 &none  &none &none &none &none &none
+   &kp F11 &kp F4 &kp F5 &kp F6 &none  &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI
+   &kp F10 &kp F1 &kp F2 &kp F3 &none  &none &none &none &none &none
                      &none &none &none  &none &none &none
                         >;
                 };
                 game_layer {
                         display-name = "Game";
                         bindings = <
-   &none &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U &kp Y  &sqtdqt &none
-   &none &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E &kp I  &kp O   &none
-   &none &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &cmlt &dotgt &slqst  &none
+   &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U &kp Y  &sqtdqt
+   &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E &kp I  &kp O
+   &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &cmlt &dotgt &slqst
       &kp ESC &kp BSPC &kp SPACE    &kp RET &kp TAB  &kp DEL
                         >;
                 };
