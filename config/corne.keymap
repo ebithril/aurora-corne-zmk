@@ -117,9 +117,9 @@
                 mouse_layer {
                         display-name = "Mouse";
                         bindings = <
-   &none    &none    &none     &none      &none  &none &msc MOVE_UP &none &none &none
+   &none    &none    &none     &none      &none  &none &msc SCRL_UP &none &none &none
    &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none  &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
-   &none &none &none &none &none                 &none &msc MOVE_DOWN &none &none &none
+   &none &none &none &none &none                 &none &msc SRCL_DOWN &none &none &none
                      &none &none &none                 &mkp MB1 &mkp MB2 &mkp MB3
                         >;
                 };
